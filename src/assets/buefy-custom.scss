@@ -1,0 +1,54 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: $white;
+$primary-invert: findColorInvert($white);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+$google: #db3236;
+$google-invert: findColorInvert($google);
+$theme: #ec572b;
+$theme-invert: findColorInvert($theme);
+$primary-dark: #92281A;
+$primary-dark-invert: findColorInvert($primary-dark);
+$primary-darker: #621B11;
+$primary-darker-invert: findColorInvert($primary-darker);
+$salmon-green: #39E464;
+$salmon-green-invert: findColorInvert($salmon-green);
+$dark-transparent: rgba($dark, 0.2);
+$dark-transparent-invert: findColorInvert($dark);
+
+// text
+$text: $white;
+$text-invert: findColorInvert($text);
+$text-light: $white-bis;
+$text-strong: $white-ter;
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+    "twitter": ($twitter, $twitter-invert),
+    "google": ($google, $google-invert),
+    "theme": ($theme, $theme-invert),
+    "salmon-green": ($salmon-green, $salmon-green-invert),
+    "dark-transparent": ($dark-transparent, $dark-transparent-invert)
+);
+
+$link: $theme;
+$link-hover: $primary-dark;
+$link-visited: $primary-darker;
+$link-invert: $theme-invert;
+$link-focus-border: $theme;
+
+// Import Bulma and Buefy styles
+@import "~bulma/bulma";
+@import "~buefy/src/scss/buefy";
