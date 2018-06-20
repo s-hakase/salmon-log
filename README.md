@@ -1,6 +1,7 @@
 # salmon-log
-
-> サーモンランの記録を保存できるやつです
+It is a web application that can manually add the achievement of the Splatoon 2 Coop mode "Salmon Run".
+スプラトゥーン2のCoopモード「サーモンラン」の実績を手動で記録できるWebアプリです。
+https://salmon-log.firebaseapp.com/#/
 
 ## Build Setup
 
@@ -13,18 +14,11 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Requirements
+
+- Firebase API key and so on
+    - fill in `src/constants/config.js`
+- Twitter API key and so on
+    - add them to Firebase project
