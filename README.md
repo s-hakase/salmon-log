@@ -1,6 +1,8 @@
 # salmon-log
 It is a web application that can manually add the achievement of the Splatoon 2 Coop mode "Salmon Run".
+
 スプラトゥーン2のCoopモード「サーモンラン」の実績を手動で記録できるWebアプリです。
+
 https://salmon-log.firebaseapp.com/#/
 
 ## Build Setup
